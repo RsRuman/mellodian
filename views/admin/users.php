@@ -8,16 +8,9 @@
 </head>
 <body class="bg-gray-100">
 <!-- Navbar -->
-<header class="bg-blue-600 text-white p-4 shadow">
-    <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-bold">Admin Dashboard</h1>
-        <nav>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:underline">Logout</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<?php
+include_once "views/components/navbar.php";
+?>
 
 <!-- Main Content -->
 <div class="container mx-auto py-10 px-6">

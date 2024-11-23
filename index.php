@@ -92,6 +92,13 @@ switch ($route) {
         }
         break;
 
+    case 'logout':
+        if (isAuthenticated() && ($method === 'POST')) {
+            session_destroy();
+            header('Location: /login');
+        }
+        break;
+
     default:
         http_response_code(404);
         echo "Page not found!";

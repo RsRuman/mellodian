@@ -119,9 +119,9 @@ class AuthController
             session_start();
 
             $_SESSION['authenticated'] = true;
-            $_SESSION['id']            = $this->user->id;
-            $_SESSION['email']         = $email;
-            $_SESSION['role']          = $this->user->role;
+            $_SESSION['id']            = $user['id'];
+            $_SESSION['email']         = $user['email'];
+            $_SESSION['role']          = $user['role'];
 
             header('Location: /');
             exit();

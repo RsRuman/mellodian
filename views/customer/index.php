@@ -8,17 +8,9 @@
 </head>
 <body class="bg-gray-100">
 <!-- Navigation Bar -->
-<header class="bg-blue-600 text-white">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-        <h1 class="text-xl font-bold">Mellodian Community Park</h1>
-        <nav>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:text-blue-300">Events</a></li>
-                <li><a href="#" class="hover:text-blue-300">Logout</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<?php
+include_once "views/components/navbar.php";
+?>
 
 <!-- Main Content -->
 <main class="container mx-auto py-8 px-6">
